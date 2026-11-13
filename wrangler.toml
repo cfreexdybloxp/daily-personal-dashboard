@@ -13,8 +13,7 @@ crons = ["*/30 * * * *"]
 # y pega el id resultante abajo:
 [[kv_namespaces]]
 binding = "DAILY_KV"
-id = "daily_kv_namespace_id"
-preview_id = "daily_kv_preview_id"
+id = "d41477feed7c4082ac6ce951e7896bc2"
 
 [vars]
 VAPID_PUBLIC_KEY = "BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSgSnfckjBJuBkr3qBUYIHBQFLXYp5Nksh8U"

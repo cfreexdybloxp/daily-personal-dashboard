@@ -1,5 +1,7 @@
 import { StorageService } from '../services/storage';
 
+const API_BASE = typeof window !== 'undefined' && window.location.hostname === 'localhost' ? '' : 'https://daily-panel.tco-bolivia.workers.dev';
+
 export function isPushSupported(): boolean {
   return 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
 }
@@ -46,7 +48,7 @@ export async function subscribeToPush(): Promise<{ success: boolean; message: st
     // 1. Obtener clave pública VAPID del servidor o usar la pública predeterminada
     let vapidPublicKey = 'BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSgSnfckjBJuBkr3qBUYIHBQFLXYp5Nksh8U';
     try {
-      const res = await fetch('/api/push/vapid-public-key');
+      const res = await fetch(`${API_BASE}/api/push/vapid-public-key`);
       if (res.ok) {
         const data = await res.json();
         if (data.publicKey) vapidPublicKey = data.publicKey;
@@ -68,7 +70,7 @@ export async function subscribeToPush(): Promise<{ success: boolean; message: st
 
     // 3. Enviar la suscripción al Cloudflare Worker
     const prefs = StorageService.getPreferences();
-    await fetch('/api/push/subscribe', {
+    await fetch(`${API_BASE}/api/push/subscribe`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -108,7 +110,7 @@ export async function sendTestNotification(): Promise<{ success: boolean; messag
   // Intentar vía backend
   if (subscription) {
     try {
-      const res = await fetch('/api/push/test', {
+      const res = await fetch(`${API_BASE}/api/push/test`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ subscription: subscription.toJSON() })

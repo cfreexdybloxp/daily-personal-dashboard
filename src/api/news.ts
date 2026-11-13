@@ -29,6 +29,8 @@ const FALLBACK_FEEDS: Record<NewsCategory, { url: string; source: string; catego
   }
 };
 
+const API_BASE = window.location.hostname === 'localhost' ? '' : 'https://daily-panel.tco-bolivia.workers.dev';
+
 export async function fetchNews(category: NewsCategory = 'bolivia', forceRefresh = false): Promise<NewsItem[]> {
   const cached = StorageService.getNewsCache();
   const TWENTY_MINUTES = 20 * 60 * 1000;
@@ -39,7 +41,7 @@ export async function fetchNews(category: NewsCategory = 'bolivia', forceRefresh
 
   // 1. Intentar primero con la API de Cloudflare Worker / Vite dev server
   try {
-    const res = await fetch(`/api/news?category=${category}`, {
+    const res = await fetch(`${API_BASE}/api/news?category=${category}`, {
       headers: { 'Accept': 'application/json' }
     });
     if (res.ok) {
