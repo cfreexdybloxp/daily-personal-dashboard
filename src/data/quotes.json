@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Marco Aurelio",
+    "work": "Meditaciones, Libro IV, 3",
+    "source": "Traducción de Ramón Bach Pellicer, Editorial Gredos",
+    "quote": "En ninguna parte puede hallar el hombre un retiro más apacible y tranquilo que en la intimidad de su propia alma, sobre todo si posee en su interior bienes tales que, al contemplarlos, al punto se siente en una completa serenidad.",
+    "reflection": "Buscamos a menudo escapar de las presiones cambiando de entorno, esperando que un viaje o un fin de semana resuelva la inquietud. Marco Aurelio recuerda que la serenidad no es un lugar físico, sino una disposición mental que se cultiva ordenando nuestros propios juicios y aceptando lo que está fuera de nuestro control."
+  },
+  {
+    "id": 2,
+    "author": "Séneca",
+    "work": "De la brevedad de la vida, Capítulo I",
+    "source": "Diálogos morales, Epistolario a Paulino",
+    "quote": "No tenemos poco tiempo, sino que perdemos mucho. La vida es bastante larga y se nos ha dado con generosidad para la realización de las cosas más altas, si toda ella se emplease bien.",
+    "reflection": "La queja común de 'no tener tiempo' suele esconder una falta de prioridades y una dispersión en distracciones triviales. El día no se vuelve corto por su naturaleza, sino por la facilidad con que cedemos horas valiosas a asuntos que no aportan a nuestro propósito vital."
+  },
+  {
+    "id": 3,
+    "author": "Epicteto",
+    "work": "Enquiridión (Manual de vida), Capítulo I",
+    "source": "Versión de Arriano, traducción de José Manuel García de la Mora",
+    "quote": "De las cosas que existen, unas dependen de nosotros y otras no. De nosotros dependen el juicio, el impulso, el deseo, la aversión y, en una palabra, todas nuestras propias acciones.",
+    "reflection": "La dicotomía del control estoica es el filtro definitivo para reducir la ansiedad diaria: gastar energía en el clima, en las opiniones ajenas o en la economía global es agotador; dirigirla hacia nuestra respuesta y conducta es el único camino hacia la tranquilidad."
+  },
+  {
+    "id": 4,
+    "author": "Aristóteles",
+    "work": "Ética a Nicómaco, Libro II, 1",
+    "source": "Traducción de Julio Pallí Bonet, Editorial Gredos",
+    "quote": "La excelencia moral no se produce en nosotros ni por naturaleza ni contra naturaleza, sino que, estando naturalmente capacitados para recibirla, la perfeccionamos por la costumbre.",
+    "reflection": "No somos personas justas, disciplinadas o pacientes por destino genético ni por un deseo repentino, sino por la repetición constante de pequeños actos en situaciones cotidianas. El carácter es el residuo de los hábitos diarios."
+  },
+  {
+    "id": 5,
+    "author": "Sócrates",
+    "work": "Apología de Sócrates (transmitido por Platón), 38a",
+    "source": "Diálogos de Platón, Editorial Gredos",
+    "quote": "Una vida sin examen no merece ser vivida para el ser humano.",
+    "reflection": "Vivir en piloto automático es renunciar a la propia libertad. Tomar cinco minutos al inicio del día para preguntarse qué estamos haciendo, por qué lo hacemos y si nuestros principios se reflejan en nuestros actos transforma la rutina en una existencia deliberada."
+  },
+  {
+    "id": 6,
+    "author": "Confucio",
+    "work": "Analectas (Lunyu), Libro II, 17",
+    "source": "Traducción directa de Iñaki Preciado Idoeta",
+    "quote": "Saber que se sabe lo que se sabe, y saber que no se sabe lo que no se sabe: he aquí el verdadero saber.",
+    "reflection": "Reconocer los límites de nuestra propia ignorancia es la protección más eficaz contra la soberbia y las malas decisiones. La humildad intelectual nos mantiene curiosos, receptivos y predispuestos al aprendizaje continuo."
+  },
+  {
+    "id": 7,
+    "author": "Friedrich Nietzsche",
+    "work": "El crepúsculo de los ídolos, Máximas y dardos, 12",
+    "source": "Traducción de Andrés Sánchez Pascual, Alianza Editorial",
+    "quote": "Quien tiene un porqué para vivir, puede soportar casi cualquier cómo.",
+    "reflection": "Las dificultades cotidianas, el cansancio y los obstáculos se vuelven intolerables únicamente cuando carecemos de un sentido profundo. Cuando tenemos claridad sobre el motivo por el que luchamos, las incomodidades del camino se convierten en etapas necesarias."
+  },
+  {
+    "id": 8,
+    "author": "Fiódor Dostoyevski",
+    "work": "Los hermanos Karamázov, Libro VI, Capítulo 3",
+    "source": "Traducción de Rafael Cansinos Assens",
+    "quote": "El hombre no puede soportar la vida sin saber para qué vive, y si no ve claro su objetivo, antes preferirá destruirse a sí mismo que permanecer en la tierra.",
+    "reflection": "La necesidad humana más imperiosa no es el confort material, sino la significación existencial. Cada jornada cobra valor cuando definimos conscientemente a qué o a quién servirá nuestro esfuerzo diario."
+  },
+  {
+    "id": 9,
+    "author": "Antoine de Saint-Exupéry",
+    "work": "Tierra de hombres (Terre des hommes), Capítulo VIII",
+    "source": "Éditions Gallimard / Traducción castellana oficial",
+    "quote": "Ser hombre es precisamente ser responsable. Es sentir que al colocar una piedra se contribuye a construir el mundo.",
+    "reflection": "Nuestras tareas cotidianas, por más pequeñas que parezcan, no ocurren en el vacío. Cuando asumimos la responsabilidad personal por nuestro trabajo, nuestro entorno y el trato a los demás, cada acto adquiere un peso constructivo real."
+  },
+  {
+    "id": 10,
+    "author": "Marco Aurelio",
+    "work": "Meditaciones, Libro II, 1",
+    "source": "Traducción de Ramón Bach Pellicer, Editorial Gredos",
+    "quote": "Al amanecer, prevénte: tropezaré con un indiscreto, un ingrato, un insolente, un mentiroso, un envidioso, un insociable. Todos esos males les sobrevienen por ignorancia de los bienes y de los males.",
+    "reflection": "La frustración con los demás nace de expectativas irreales. Si anticipamos con serenidad que encontraremos conductas difíciles, no nos sorprenderán ni perturbarán nuestro ánimo; en lugar de ira, responderemos con comprensión y firmeza."
+  }
+]

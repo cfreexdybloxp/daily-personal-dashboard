@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "El reloj circadiano y la luz azul matutina",
+    "category": "Neurociencia y Biología",
+    "explanation": "Las células ganglionares retinianas intrínsecamente fotosensibles (ipRGC) contienen melanopsina y responden directamente a la luz solar matutina. Recibir entre 10 y 15 minutos de luz natural en los primeros 60 minutos tras despertar suprime la melatonina e inicia una cuenta regresiva que facilita conciliar el sueño 14 a 16 horas después.",
+    "source": "Huberman Lab / Proceedings of the National Academy of Sciences (PNAS)"
+  },
+  {
+    "id": 2,
+    "title": "El origen del Cero posicional en las matemáticas",
+    "category": "Historia de la Ciencia",
+    "explanation": "Aunque babilonios y mayas utilizaron marcas de separación posicional, fue el astrónomo indio Brahmagupta quien, en el año 628 d.C. en su obra 'Brahmasphutasiddhanta', definió formalmente el cero no solo como un hueco o dígito nulo, sino como un número independiente con sus propias reglas algebraicas de suma, resta y multiplicación.",
+    "source": "History of Mathematics Archive, Universidad de St Andrews"
+  },
+  {
+    "id": 3,
+    "title": "La altitud de La Paz y el punto de ebullición del agua",
+    "category": "Física y Entorno Local",
+    "explanation": "A la altitud media de La Paz (~3.640 m s.n.m.), la presión atmosférica desciende a aproximadamente 490 mmHg (frente a los 760 mmHg a nivel del mar). En consecuencia, el agua no hierve a 100 °C sino a aproximadamente 87,5 °C. Esto afecta los tiempos de cocción de legumbres y la extracción de compuestos en el café de altura.",
+    "source": "Termodinámica y Meteorología Andina / UMSA"
+  },
+  {
+    "id": 4,
+    "title": "El efecto Dunning-Kruger y la curva del aprendizaje",
+    "category": "Psicología Cognitiva",
+    "explanation": "Descrito por David Dunning y Justin Kruger en 1999 en la Universidad de Cornell, este sesgo cognitivo demuestra que en las etapas iniciales de aprendizaje de una disciplina solemos sobreestimar drásticamente nuestra competencia. Solo al profundizar descubrimos la inmensidad de lo que ignoramos, momento en el cual la confianza cae y se vuelve realista.",
+    "source": "Journal of Personality and Social Psychology, APA (1999)"
+  },
+  {
+    "id": 5,
+    "title": "La radiación de fondo de microondas cósmico",
+    "category": "Astrofísica",
+    "explanation": "El eco remanente del Big Bang impregna todo el universo observable a una temperatura de aproximadamente 2,725 Kelvin (-270,4 °C). Cuando sintonizabas un televisor analógico antiguo en un canal sin señal, alrededor del 1% de la 'nieve' o estática visible en la pantalla correspondía a fotones de esta radiación cósmica primigenia.",
+    "source": "Misión WMAP y Planck / NASA & ESA"
+  },
+  {
+    "id": 6,
+    "title": "La ley de Parkinson sobre el trabajo y el tiempo",
+    "category": "Productividad y Sociología",
+    "explanation": "Formulada por Cyril Northcote Parkinson en 1955 en The Economist: 'El trabajo se expande hasta llenar el tiempo disponible para su realización'. Si te asignas todo el día para redactar un documento breve, mentalmente le darás la complejidad suficiente para agotar la jornada. Fijar límites temporales cortos y estrictos combate la procrastinación.",
+    "source": "The Economist (Noviembre 1955) / 'Parkinson's Law'"
+  },
+  {
+    "id": 7,
+    "title": "El misterio de los árboles en las ciudades y la reducción térmica",
+    "category": "Ciencia Urbana",
+    "explanation": "Un árbol frondoso no solo da sombra pasiva: a través de la evapotranspiración libera cientos de litros de vapor de agua diarios que enfrían activamente el aire circundante en hasta 2 a 8 °C, contrarrestando el fenómeno de isla de calor urbana generado por el asfalto y el hormigón.",
+    "source": "Servicio Forestal del USDA / Nature Climate Change"
+  }
+]

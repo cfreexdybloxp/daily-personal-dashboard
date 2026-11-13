@@ -1,0 +1,26 @@
+{
+  "name": "Daily — Centro Personal",
+  "short_name": "Daily",
+  "description": "Tu centro personal de información matutina: clima, noticias verificadas, filosofía y curiosidades.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "weather", "productivity"],
+  "lang": "es-BO"
+}

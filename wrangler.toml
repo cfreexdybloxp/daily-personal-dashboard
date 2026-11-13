@@ -1,0 +1,21 @@
+name = "daily-panel"
+main = "worker/index.ts"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+
+# Despacho programado para los resúmenes matutino, mediodía y tarde
+# Cloudflare Workers Free incluye Cron Triggers gratuitos
+[triggers]
+crons = ["*/30 * * * *"]
+
+# Almacén Cloudflare KV para guardar suscripciones Web Push y caché de noticias
+# Para crearlo en tu cuenta de Cloudflare: npx wrangler kv namespace create DAILY_KV
+# y pega el id resultante abajo:
+[[kv_namespaces]]
+binding = "DAILY_KV"
+id = "daily_kv_namespace_id"
+preview_id = "daily_kv_preview_id"
+
+[vars]
+VAPID_PUBLIC_KEY = "BEl62iUYgUivxIkv69yViEuiBIa-Ib9-SkvMeAtA3LFgDzkrxZJjSgSnfckjBJuBkr3qBUYIHBQFLXYp5Nksh8U"
+VAPID_SUBJECT = "mailto:daily-admin@pagpersonal.local"

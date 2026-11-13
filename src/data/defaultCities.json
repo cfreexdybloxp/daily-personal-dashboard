@@ -1,0 +1,74 @@
+[
+  {
+    "id": "lapaz",
+    "name": "La Paz",
+    "country": "Bolivia",
+    "latitude": -16.5000,
+    "longitude": -68.1500,
+    "elevation": 3640,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "elalto",
+    "name": "El Alto",
+    "country": "Bolivia",
+    "latitude": -16.5047,
+    "longitude": -68.1627,
+    "elevation": 4070,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "cochabamba",
+    "name": "Cochabamba",
+    "country": "Bolivia",
+    "latitude": -17.3895,
+    "longitude": -66.1568,
+    "elevation": 2570,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "santacruz",
+    "name": "Santa Cruz de la Sierra",
+    "country": "Bolivia",
+    "latitude": -17.7863,
+    "longitude": -63.1812,
+    "elevation": 416,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "sucre",
+    "name": "Sucre",
+    "country": "Bolivia",
+    "latitude": -19.0431,
+    "longitude": -65.2592,
+    "elevation": 2790,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "tarija",
+    "name": "Tarija",
+    "country": "Bolivia",
+    "latitude": -21.5355,
+    "longitude": -64.7296,
+    "elevation": 1850,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "oruro",
+    "name": "Oruro",
+    "country": "Bolivia",
+    "latitude": -17.9667,
+    "longitude": -67.1167,
+    "elevation": 3735,
+    "timezone": "America/La_Paz"
+  },
+  {
+    "id": "potosi",
+    "name": "Potosí",
+    "country": "Bolivia",
+    "latitude": -19.5833,
+    "longitude": -65.7500,
+    "elevation": 4090,
+    "timezone": "America/La_Paz"
+  }
+]
