@@ -79,9 +79,11 @@ export interface NotificationSettings {
   timezone: string;
 }
 
+export type AppTheme = 'purple-glass' | 'dynamic-blue' | 'dynamic-night';
+
 export interface UserPreferences {
   selectedCity: CityLocation;
-  theme: 'dark' | 'light' | 'graphite';
+  theme: AppTheme;
   notifications: NotificationSettings;
   preferredCategories: NewsCategory[];
   enabledSections: {

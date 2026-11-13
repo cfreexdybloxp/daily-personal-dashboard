@@ -8,10 +8,19 @@ import { BottomNav, ActiveTab } from './components/BottomNav';
 import { SettingsModal } from './components/SettingsModal';
 import { StorageService } from './services/storage';
 import { registerServiceWorker } from './api/push';
+import { AppTheme } from './types';
+
+// Definición de temas a nivel de módulo (fuera de DOMContentLoaded para evitar Temporal Dead Zone)
+const THEME_CYCLE: Array<{ id: AppTheme; label: string; icon: string; metaColor: string }> = [
+  { id: 'purple-glass', label: 'Púrpura', icon: '💜', metaColor: '#7c3aed' },
+  { id: 'dynamic-blue', label: 'Azul Cielo', icon: '💙', metaColor: '#0284c7' },
+  { id: 'dynamic-night', label: 'Noche', icon: '🌙', metaColor: '#0f172a' }
+];
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Inicializar fecha en el encabezado
+  // 1. Aplicar fecha y tema inmediatamente
   updateHeaderDate();
+  applyThemeState();
 
   // 2. Elementos DOM
   const weatherSec = document.getElementById('weather-section')!;
@@ -23,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const bottomNavContainer = document.getElementById('bottom-nav-container')!;
   const settingsModalOverlay = document.getElementById('settings-modal-overlay')!;
   const openSettingsHeaderBtn = document.getElementById('open-settings-header-btn')!;
+  const quickThemeToggleBtn = document.getElementById('quick-theme-toggle-btn')!;
 
   // 3. Instanciar Componentes
   const weatherWidget = new WeatherWidget(weatherSec);
@@ -31,13 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const newsWidget = new NewsWidget(newsSec);
 
   const savedArticlesView = new SavedArticlesView(savedSec, () => {
-    // Al eliminar un artículo desde guardados, refrescar vista de noticias por si estaba visible
     newsWidget.render();
   });
 
   const settingsModal = new SettingsModal(settingsModalOverlay, () => {
-    // Cuando se actualizan preferencias (ciudad o módulos visibles)
     applyPreferences();
+    applyThemeState();
     weatherWidget.load(true);
   });
 
@@ -74,13 +83,39 @@ document.addEventListener('DOMContentLoaded', () => {
     newsSec.style.display = prefs.enabledSections.news ? 'block' : 'none';
   }
 
-  // 6. Botón de cabecera de ajustes
+  // 6. Aplicar estado del tema
+  function applyThemeState() {
+    const prefs = StorageService.getPreferences();
+    const currentTheme = prefs.theme || 'purple-glass';
+    document.body.setAttribute('data-theme', currentTheme);
+
+    const themeObj = THEME_CYCLE.find(t => t.id === currentTheme) || THEME_CYCLE[0];
+    const btnIcon = document.getElementById('theme-btn-icon');
+    const btnLabel = document.getElementById('theme-btn-label');
+    if (btnIcon) btnIcon.textContent = themeObj.icon;
+    if (btnLabel) btnLabel.textContent = themeObj.label;
+
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) metaTheme.setAttribute('content', themeObj.metaColor);
+  }
+
+  quickThemeToggleBtn.addEventListener('click', () => {
+    const prefs = StorageService.getPreferences();
+    const currentIndex = THEME_CYCLE.findIndex(t => t.id === prefs.theme);
+    const nextTheme = THEME_CYCLE[(currentIndex + 1) % THEME_CYCLE.length];
+    
+    prefs.theme = nextTheme.id;
+    StorageService.savePreferences(prefs);
+    applyThemeState();
+  });
+
+  // 7. Botón de cabecera de ajustes
   openSettingsHeaderBtn.addEventListener('click', () => {
     bottomNav.setTab('settings');
     settingsModal.open();
   });
 
-  // 7. Render inicial
+  // 8. Render inicial
   applyPreferences();
   weatherWidget.load();
   quoteWidget.render();
@@ -88,14 +123,13 @@ document.addEventListener('DOMContentLoaded', () => {
   newsWidget.loadCategory('bolivia');
   bottomNav.render();
 
-  // 8. Registrar Service Worker para PWA y Web Push
+  // 9. Registrar Service Worker para PWA y Web Push
   registerServiceWorker();
 
-  // 9. Comprobar refresco inteligente al volver a la pestaña
+  // 10. Refresco inteligente
   document.addEventListener('visibilitychange', () => {
     if (document.visibilityState === 'visible') {
       updateHeaderDate();
-      // Refresco silencioso si los datos han expirado
       weatherWidget.load(false);
     }
   });
@@ -110,7 +144,6 @@ function updateHeaderDate() {
       day: 'numeric',
       month: 'short'
     }).format(now);
-    // Capitalizar primera letra: ej. "Jue, 13 nov"
     dateEl.textContent = formatted.charAt(0).toUpperCase() + formatted.slice(1);
   }
 }

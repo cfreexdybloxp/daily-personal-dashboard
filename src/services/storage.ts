@@ -15,7 +15,7 @@ export const defaultPreferences: UserPreferences = {
     elevation: 3640,
     timezone: 'America/La_Paz'
   },
-  theme: 'graphite',
+  theme: 'purple-glass',
   notifications: {
     enabled: false,
     morningTime: '07:00',
