@@ -39,22 +39,16 @@ export class SettingsModal {
         <div class="setting-group">
           <label class="setting-label">Atmósfera y Tema Visual</label>
           <div class="theme-options-grid">
-            <div class="theme-card-option ${prefs.theme === 'purple-glass' ? 'active' : ''}" data-theme-val="purple-glass">
-              <div class="theme-swatch" style="background: linear-gradient(135deg, #7c3aed, #8b5cf6);"></div>
-              <span style="font-size: 0.75rem; font-weight: 700;">Púrpura Glass</span>
-              <span style="font-size: 0.65rem; color: var(--text-muted);">Estilo Mockup</span>
-            </div>
-
             <div class="theme-card-option ${prefs.theme === 'dynamic-blue' ? 'active' : ''}" data-theme-val="dynamic-blue">
               <div class="theme-swatch" style="background: linear-gradient(135deg, #0284c7, #38bdf8);"></div>
-              <span style="font-size: 0.75rem; font-weight: 700;">Azul Cielo</span>
-              <span style="font-size: 0.65rem; color: var(--text-muted);">Reactivo al Clima</span>
+              <span style="font-size: 0.75rem; font-weight: 700;">Azul (cambia con clima)</span>
+              <span style="font-size: 0.65rem; color: var(--text-muted);">Tema reactivo al pronóstico</span>
             </div>
 
             <div class="theme-card-option ${prefs.theme === 'dynamic-night' ? 'active' : ''}" data-theme-val="dynamic-night">
               <div class="theme-swatch" style="background: linear-gradient(135deg, #0f172a, #1e293b);"></div>
-              <span style="font-size: 0.75rem; font-weight: 700;">Noche Zafiro</span>
-              <span style="font-size: 0.65rem; color: var(--text-muted);">Cielo Nocturno</span>
+              <span style="font-size: 0.75rem; font-weight: 700;">Noche (estática)</span>
+              <span style="font-size: 0.65rem; color: var(--text-muted);">Tema oscuro permanente</span>
             </div>
           </div>
         </div>
